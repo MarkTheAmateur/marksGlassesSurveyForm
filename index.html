@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--================ METAS ================-->
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--================ INSERT CSS LINK ================-->
+            <link rel="stylesheet" type="text/css" href="style.css">
+        <!--================ TITLE OF THE WEBPAGE ================-->
+            <title>Mark's Glasses Survey Form</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <!--================ HEADER SECTION ================-->
+                <header class="header">
+                    <h1 id="title" class="text-center">Mark's Glasses Survey Form</h1>
+                    <p id="description" class="text-center description">What's your opinion on our new glasses?</p>
+                </header>
+
+            <!--================ FORM SECTION ================-->
+                <form action="" id="survey-form">
+                    <fieldset class="section">
+                        <div class="group">
+                            <label for="name" id="name-label">What's your name?</label>
+                            <input type="text" name="name" id="name" class="field" placeholder="Enter your name here..." required>
+                        </div>
+                        <div class="group">
+                            <label for="email" id="email-label">What's your E-Mail?</label>
+                            <input type="email" name="email" id="email" class="field" placeholder="Enter your E-Mail here..." required>
+                        </div>
+                        <div class="group">
+                            <label for="age" id="number-label">What's your age? <span>(optional)</span></label>
+                            <input type="number" name="age" id="number" class="field" min="10" max="120" placeholder="Enter your age (in years) here...">
+                        </div>
+                    </fieldset>
+                    <fieldset class="section">
+                        <div class="group">
+                            <label>What's your favourite feature of my new glasses?</label>
+                            <select name="feature" id="dropdown" class="field" required>
+                                <option disabled selected value="">(select one)</option>
+                                <option value="transparency">Transparency</option>
+                                <option value="coolness">Coolness</option>
+                                <option value="assurance">Assurance</option>
+                                <option value="comfortness">Comfortness</option>
+                                <option value="transferability">Transferability</option>
+                                <option value="durable">Durable</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="group">
+                            <p>Would you recommend Mark's Glasses to your friend?</p>
+                            <label>
+                                <input type="radio" name="recommend" value="yesShort" class="input-radio"> Yes.
+                            </label>
+                            <label>
+                                <input type="radio" name="recommend" value="yesMedium" class="input-radio"> Yeah, definitely would. Truly amazing art.
+                            </label>
+                            <label>
+                                <input type="radio" name="recommend" value="yesLong" class="input-radio"> In my opinion, Mark's Glasses is truly magnificent. By all means, I'd totally recommend it to my friend.
+                            </label>
+                        </div>
+                        <div class="group">
+                            <p>Which part of the glasses would you like us to imporve? <span>(Check all that apply)</span></p>
+                            <label>
+                                <input type="checkbox" name="improvements" value="lenses" class="input-checkbox"> Lenses
+                            </label>
+                            <label>
+                                <input type="checkbox" name="improvements" value="nosepads" class="input-checkbox"> Nose Pads
+                            </label>
+                            <label>
+                                <input type="checkbox" name="improvements" value="temples" class="input-checkbox"> Temples
+                            </label>
+                            <label>
+                                <input type="checkbox" name="improvements" value="coolness" class="input-checkbox"> Coolness
+                            </label>
+                        </div>
+                        <div class="group">
+                            <p>Any comments, feedback or suggestions? <span>(optional)</span></p>
+                            <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comment here..."></textarea>
+                        </div>
+                        <div class="group">
+                            <button type="submit" id="submit" class="submit-button">Submit</button>
+                        </div>
+                    </fieldset>
+                </form>
+        </div>
+    </body>
+</html>
